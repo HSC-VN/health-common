@@ -1,0 +1,10 @@
+{
+    "name": "@lvb/healthcare",
+    "version": "1.0.0",
+    "description": "Health care",
+    "main": "healthcare.js",
+    "types": "healthcare.d.ts",
+    "author": "LongLV",
+    "license": "ISC"
+  }
+   
