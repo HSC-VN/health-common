@@ -82,7 +82,4 @@ debug.log
 #actual graphic test images
 tools/snapshot/**/actual/
 
-src/common/data/lcm.js
-src/common/data/lcm.d.ts
-
 .npmrc

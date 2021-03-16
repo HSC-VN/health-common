@@ -1,9 +1,9 @@
 {
-    "name": "@lvb/healthcare",
+    "name": "@hsc/healthcare-common",
     "version": "1.0.0",
     "description": "Health care",
-    "main": "healthcare.js",
-    "types": "healthcare.d.ts",
+    "main": "healthcare-common.js",
+    "types": "healthcare-common.d.ts",
     "author": "LongLV",
     "license": "ISC"
   }
