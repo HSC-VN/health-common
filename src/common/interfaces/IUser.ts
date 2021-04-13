@@ -37,7 +37,7 @@ export interface IUser {
     getCreatedDate(): string;
 
     getModifiedDate(): string;
-    
+
     setUserName(username: string): void;
 
     setUserEmail(email: string): void;

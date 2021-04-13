@@ -1,5 +1,5 @@
-import { IUser } from "./IUser";
+import { IUser } from './IUser';
 
 export interface IClinic extends IUser {
-    
+    IClinic: string;
 }
