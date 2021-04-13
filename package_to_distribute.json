@@ -1,5 +1,5 @@
 {
-    "name": "@hsc/healthcare-common",
+    "name": "@longlv91/healthcare-common",
     "version": "1.0.0",
     "description": "Health care",
     "main": "healthcare-common.js",

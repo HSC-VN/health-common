@@ -1,7 +1,18 @@
 {
-  "name": "@hsc/healthcare-common",
+  "name": "@longlv91/healthcare-common",
   "version": "1.0.0",
   "description": "Health care common library",
+  "keywords": [
+    "health"
+  ],
+  "homepage": "https://github.com/HSC-VN/health-common#readme",
+  "bugs": {
+    "url": "https://github.com/HSC-VN/health-common/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/HSC-VN/health-common.git"
+  },
   "license": "ISC",
   "author": "longlv91",
   "main": "dist/healthcare-common.js",
@@ -10,7 +21,7 @@
     "build": "npm run build:ci",
     "build:ci": "npm run clean && npm run compile_and_bundle && npm run copy_files",
     "buildquick": "npm run compile_and_bundle && npm run copy_files",
-    "clean": "cleandir ./build && cleandir ./dist",
+    "clean": "rimraf ./build && rimraf ./dist",
     "clear:all": "rm -rf node_modules/ dist/",
     "compile_and_bundle": "tsc -p tsconfig.json && rollup -c",
     "copy_files": "node ./copy_files.js",
@@ -20,8 +31,8 @@
     "lint-fix": "npm run tslint-fix",
     "lint:detect-disable": "echo fix me",
     "precommit": "npm run lint && npm run sort:pjson && git add .",
-    "publish-locally": "npm run build:ci && cd dist/ && npm pack && npm link && cd ..",
     "publish": "npm publish --access public",
+    "publish-locally": "npm run build:ci && cd dist/ && npm pack && npm link && cd ..",
     "release": "semantic-release",
     "release-notes": "echo fix",
     "setup": "npm link",
@@ -75,16 +86,5 @@
     "ts-node": "^8.8.1",
     "tslint": "^5.13.1",
     "typescript": "~3.6.5"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/HSC-VN/health-common.git"
-  },
-  "keywords": [
-    "health"
-  ],
-  "bugs": {
-    "url": "https://github.com/HSC-VN/health-common/issues"
-  },
-  "homepage": "https://github.com/HSC-VN/health-common#readme"
+  }
 }
