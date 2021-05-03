@@ -6,13 +6,13 @@ export interface IUser {
     firstName: string;
     status: string;
     email: string;
-    age: string;
+    age: number;
     address: string;
     active: boolean;
     createdBy: string;
     modifiedBy: string;
-    createdDate: string;
-    modifiedDate: string;
+    createdDate: Date;
+    modifiedDate: Date;
 
     getUserId(): string;
 
@@ -22,7 +22,7 @@ export interface IUser {
 
     getUserPassword(): string;
 
-    getAge(): string;
+    getAge(): number;
 
     getAddress(): string;
 
@@ -34,9 +34,9 @@ export interface IUser {
 
     getStatus(): string;
 
-    getCreatedDate(): string;
+    getCreatedDate(): Date;
 
-    getModifiedDate(): string;
+    getModifiedDate(): Date;
 
     setUserName(username: string): void;
 
@@ -44,7 +44,7 @@ export interface IUser {
 
     setUserPassword(password: string): void;
 
-    setAge(age: string): void;
+    setAge(age: number): void;
 
     setAddress(address: string): void;
 
